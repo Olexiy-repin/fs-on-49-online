@@ -73,13 +73,19 @@ address {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   cursor: pointer;
-
-  /*color: #ffffff;*/
 }
 
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: var(--accent-color);
+  color: var(--secondary-text-color-theme-dark);
+}
+
+.modal-btn-theme-light {
+  color: var(--secondary-text-color-theme-light);
+}
+
+.modal-btn-theme-dark {
   color: var(--secondary-text-color-theme-dark);
 }
 
@@ -116,6 +122,8 @@ address {
 }
 
 .overtitle {
+  display: flex;
+  align-items: center;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -124,12 +132,27 @@ address {
   margin-bottom: 20px;
 }
 
+.overtitle::before {
+  width: 60px;
+  height: 1px;
+  content: "";
+  margin-right: 20px;
+}
+
 .overtitle-theme-dark {
   color: rgb(var(--primary-text-color-theme-dark), 0.6);
 }
 
+.overtitle-theme-dark::before {
+  background-color: rgb(var(--primary-text-color-theme-dark), 0.6);
+}
+
 .overtitle-theme-light {
   color: var(--secondary-text-color-theme-light);
+}
+
+.overtitle-theme-light::before {
+  background-color: var(--secondary-text-color-theme-light);
 }
 
 .main-title {
