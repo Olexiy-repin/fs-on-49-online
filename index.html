@@ -443,6 +443,44 @@
             <use href="./images/sprite.svg#close-icon"></use>
           </svg>
         </button>
+
+        <form class="contact-form">
+          <label class="contact-form-field">
+            Имя*
+            <span class="contact-form-input-wrapper">
+              <input name="user_name" class="contact-form-input" type="text" required />
+              <span class="contact-form-icon"></span>
+            </span>
+          </label>
+          <label class="contact-form-field">
+            Телефон*
+            <span class="contact-form-input-wrapper">
+              <input name="user_phone" class="contact-form-input" type="tel" required />
+              <span class="contact-form-icon"></span>
+            </span>
+          </label>
+          <label class="contact-form-field">
+            Сообщение
+            <textarea
+              name="user_message"
+              class="contact-form-message"
+              placeholder="Введите текст"
+            ></textarea>
+          </label>
+          <div class="contact-form-checkbox-wrapper">
+            <input
+              name="accept-policy"
+              type="checkbox"
+              class="contact-form-checkbox visually-hidden"
+              id="policy-checkbox"
+              required
+            />
+            <label for="policy-checkbox" class="contact-form-checkbox-label">
+              Соглашаюсь с рассылкой и принимаю&nbsp;<a href="">Условия договора</a></label
+            >
+          </div>
+          <button type="submit" class="contact-form-submit-btn">отправить</button>
+        </form>
       </div>
     </div>
 
