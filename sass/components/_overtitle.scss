@@ -1,0 +1,33 @@
+.overtitle {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.overtitle::before {
+  width: 60px;
+  height: 1px;
+  content: '';
+  margin-right: 20px;
+}
+
+.overtitle-theme-dark {
+  color: rgba(var(--primary-text-color-theme-dark), 0.6);
+}
+
+.overtitle-theme-dark::before {
+  background-color: rgba(var(--primary-text-color-theme-dark), 0.6);
+}
+
+.overtitle-theme-light {
+  color: var(--secondary-text-color-theme-light);
+}
+
+.overtitle-theme-light::before {
+  background-color: var(--secondary-text-color-theme-light);
+}

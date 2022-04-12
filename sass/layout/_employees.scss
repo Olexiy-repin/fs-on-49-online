@@ -1,0 +1,47 @@
+.employees-section {
+  background-color: #f7f7f7;
+}
+
+.employees-section .title {
+  margin-bottom: 44px;
+}
+
+.employees {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+  /* justify-content: space-between; */
+}
+
+.employees-card {
+  flex-basis: calc((100% - 90px) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.employees-content-wrapper {
+  padding-top: 30px;
+  padding-left: 82px;
+  padding-right: 82px;
+}
+
+.employees-name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color-theme-light);
+  margin-bottom: 8px;
+}
+
+.employees-position {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  margin-bottom: 30px;
+}
