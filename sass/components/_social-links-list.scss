@@ -1,16 +1,15 @@
 .social-links-list {
-  display: flex;
-  align-items: center;
-}
+  @extend %align;
 
-.social-links-list::before {
-  display: block;
-  width: 60px;
-  height: 1px;
-  background-color: #303030;
-  content: '';
-  flex-shrink: 0;
-  margin-right: 40px;
+  &::before {
+    display: block;
+    width: 60px;
+    height: 1px;
+    background-color: #303030;
+    content: '';
+    flex-shrink: 0;
+    margin-right: 40px;
+  }
 }
 
 .social-links-list-item:not(:last-child) {
@@ -24,9 +23,9 @@
   letter-spacing: 0.2em;
   color: var(--secondary-text-color-theme-light);
   transition: color 250ms linear;
-}
 
-.social-links-list-link:hover,
-.social-links-list-link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }

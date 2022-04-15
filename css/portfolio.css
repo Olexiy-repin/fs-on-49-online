@@ -20,15 +20,15 @@
   align-items: center;
 }
 
-.logo {
+.header__logo {
   margin-right: 70px;
 }
 
-.nav-list-item:not(:last-child) {
+.nav-list__item:not(:last-child) {
   margin-right: 40px;
 }
 
-.nav-list-link {
+.nav-list__link {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -37,8 +37,7 @@
   transition: color 250ms linear;
 }
 
-.nav-list-link:hover,
-.nav-list-link:focus {
+.nav-list__link:hover, .nav-list__link:focus {
   color: var(--accent-color);
 }
 
@@ -53,8 +52,7 @@
   transition: color 250ms linear;
 }
 
-.contact-number:hover,
-.contact-number:focus {
+.contact-number:hover, .contact-number:focus {
   color: var(--accent-color);
 }
 

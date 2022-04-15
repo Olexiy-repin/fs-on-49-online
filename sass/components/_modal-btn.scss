@@ -12,18 +12,18 @@
   text-transform: uppercase;
   cursor: pointer;
   transition: background-color 250ms linear, color 250ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--secondary-text-color-theme-dark);
+  }
 }
 
-.modal-btn:hover,
-.modal-btn:focus {
-  background-color: var(--accent-color);
-  color: var(--secondary-text-color-theme-dark);
-}
-
-.modal-btn-theme-light {
+.modal-btn_theme_light {
   color: var(--secondary-text-color-theme-light);
 }
 
-.modal-btn-theme-dark {
+.modal-btn_theme_dark {
   color: var(--secondary-text-color-theme-dark);
 }
