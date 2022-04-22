@@ -24,7 +24,16 @@
 
 .services-list-item {
   display: flex;
+  align-items: baseline;
   justify-content: space-between;
+
+  &::before {
+    flex-grow: 1;
+    height: 1px;
+    background-color: rgba(var(--primary-text-color-theme-dark), 0.12);
+    margin: 0 6px;
+    content: '';
+  }
 
   &:not(:last-child) {
     margin-bottom: 20px;
@@ -38,6 +47,10 @@
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9da4bd;
+}
+
+.services-list-name {
+  order: -1;
 }
 
 .services-modal-btn {
