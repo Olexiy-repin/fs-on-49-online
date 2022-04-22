@@ -22,7 +22,7 @@
 
   <body>
     <header class="header">
-      <div class="container header-container">
+      <div class="container header__container">
         <nav class="navigation">
           <a class="logo header__logo link" href="/" aria-label="логотип сайта">
             <svg class="logo__img" width="68" height="54">
@@ -44,16 +44,49 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="mobile-menu-btn" data-menu-open>
+          <svg class="mobile-menu-btn__icon" width="40" height="40">
+            <use href="./images/sprite.svg#burger-menu-icon"></use>
+          </svg>
+        </button>
         <a class="contact-number link" href="tel:+380441111111">+38 044 111 11 11</a>
-        <button class="modal-btn modal-btn_theme_dark" type="button" data-modal-open>
+        <button
+          class="modal-btn modal-btn_theme_dark header__modal-btn"
+          type="button"
+          data-modal-open
+        >
           онлайн-запись
         </button>
+      </div>
+
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button type="button" class="mobile-menu__close-btn" data-menu-close>
+            <svg class="mobile-menu__close-icon" width="40" height="40">
+              <use href="./images/sprite.svg#close-icon"></use>
+            </svg>
+          </button>
+          <ul class="list">
+            <li>
+              <a class="link" href="">link-1</a>
+            </li>
+            <li>
+              <a class="link" href="">link-2</a>
+            </li>
+            <li>
+              <a class="link" href="">link-3</a>
+            </li>
+            <li>
+              <a class="link" href="">link-4</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
     <main>
       <!-- HERO -->
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container hero-container">
           <div class="hero-left-side">
             <ul class="social-links-list hero-social-links-list list">
@@ -73,10 +106,10 @@
             </p>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- ABOUT -->
-      <section class="about section">
+      <!-- <section class="about section">
         <div class="container about-container">
           <div class="about-left-side">
             <ul class="about-gallery list">
@@ -115,10 +148,10 @@
             <button class="modal-btn modal-btn_theme_light" type="button">онлайн-запись</button>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- SERVICES -->
-      <section class="services section">
+      <!-- <section class="services section">
         <div class="container">
           <p class="overtitle overtitle-theme-dark">Проведи время в компании лучших мастеров</p>
           <h2 class="title title-theme-dark">Услуги и цены</h2>
@@ -164,10 +197,10 @@
             онлайн-запись
           </button>
         </div>
-      </section>
+      </section> -->
 
       <!-- ADVANTAGES  -->
-      <section class="advantages section">
+      <!-- <section class="advantages section">
         <div class="container advantages-container">
           <div class="advantages-left-side">
             <ul class="advantages-list list">
@@ -198,10 +231,10 @@
             </p>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- EMPLOYEES -->
-      <section class="employees-section section">
+      <!-- <section class="employees-section section">
         <div class="container">
           <p class="overtitle overtitle-theme-light">для настоящих ценителей атмосферы</p>
           <h2 class="title title-theme-light">Наши мастера</h2>
@@ -337,10 +370,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- GALLERY -->
-      <section class="gallery section">
+      <!-- <section class="gallery section">
         <div class="container">
           <h2 hidden>галерея работ</h2>
           <p class="overtitle overtitle-theme-light gallery-overtitle">
@@ -385,17 +418,17 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- CONTACT -->
-      <div class="contact">
-        <!-- CONTACT FORM -->
-        <section class="contact-form-section">
+      <!-- <div class="contact"> -->
+      <!-- CONTACT FORM -->
+      <!-- <section class="contact-form-section">
           <h2 class="title">Онлайн-запись</h2>
-        </section>
+        </section> -->
 
-        <!-- CONTACT INFORMATION -->
-        <section class="contact-info-section">
+      <!-- CONTACT INFORMATION -->
+      <!-- <section class="contact-info-section">
           <h2 class="title">Контакты</h2>
           <address>
             <ul class="contact-list list">
@@ -419,10 +452,10 @@
           </address>
           <p class="overtitle">время работы</p>
           <p class="contact-info-date">Ежедневно с 9:00 до 22:00</p>
-        </section>
-      </div>
+        </section> -->
+      <!-- </div> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-container">
         <p class="copyright">&#xa9; Copyright 2020</p>
         <ul class="social-links-list list">
@@ -434,7 +467,7 @@
           </li>
         </ul>
       </div>
-    </footer>
+    </footer> -->
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -485,5 +518,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
