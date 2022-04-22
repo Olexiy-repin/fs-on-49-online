@@ -43,6 +43,18 @@ body {
   background-repeat: no-repeat;
 }
 
+/* 
+1x - 96dpi
+2x - 192dpi
+3x - 288dpi
+*/
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .banner {
+    background-image: url('../images/car@2x.jpg');
+  }
+}
+
 .team-list {
   display: flex;
   justify-content: space-between;
